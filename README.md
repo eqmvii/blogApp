@@ -1,3 +1,15 @@
+# BlogApp:
+
+Created based on StephenGrider react/redux routing tutorial
+
+http://reduxblog.herokuapp.com/
+
+ALL requests require a key parameter, eg `reduxblog.herokuapp.com/api/posts?key=123`
+
+No need to register, but must use a unique key.
+
+# Below readme from ReduxSimpleStarter:
+
 # ReduxSimpleStarter
 
 Interested in learning [Redux](https://www.udemy.com/react-redux/)?
