@@ -26824,7 +26824,7 @@
 /* 258 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
+	'use strict';
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -26847,7 +26847,8 @@
 	var DELETE_POST = exports.DELETE_POST = 'DELETE_POST';
 
 	//const ROOT_URL = 'http://reduxblog.herokuapp.com/api';
-	var ROOT_URL = process.env.APP_URL + "/api" || 'http://localhost:8080/api';
+	//const ROOT_URL = (process.env.APP_URL + "/api" )|| 'http://localhost:8080/api';
+	var ROOT_URL = 'http://eqmfullstackblog.herokuapp.com/api';
 	console.log("Root URL is: " + ROOT_URL);
 	//const API_KEY = '?key=AustinTexasUltraBlog7315647';
 	var API_KEY = '';
@@ -26895,7 +26896,6 @@
 	    payload: request
 	  };
 	}
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(5)))
 
 /***/ },
 /* 259 */
