@@ -12,7 +12,7 @@ module.exports = function (app, db) {
 
   app.route('/')
     .get(function(req,res) {
-      res.sendFile(process.cwd() + '/index.html');
+      res.sendFile(process.cwd() + '/build/index.html');
     });
 
   app.route('/api/posts/')
