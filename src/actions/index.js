@@ -5,10 +5,10 @@ export const CREATE_POST = 'CREATE_POST';
 export const FETCH_POST = 'FETCH_POST';
 export const DELETE_POST = 'DELETE_POST';
 
-const ROOT_URL = 'http://reduxblog.herokuapp.com/api';
-//const ROOT_URL = 'http://localhost:8080/api';
-const API_KEY = '?key=AustinTexasUltraBlog7315647';
-//const API_KEY = '';
+//const ROOT_URL = 'http://reduxblog.herokuapp.com/api';
+const ROOT_URL = 'http://localhost:8080/api';
+//const API_KEY = '?key=AustinTexasUltraBlog7315647';
+const API_KEY = '';
 
 
 export function fetchPosts() {
