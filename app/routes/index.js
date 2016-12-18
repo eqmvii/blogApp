@@ -18,6 +18,7 @@ module.exports = function (app, db) {
   app.route('/api/posts/')
     .get(function(req,res) {
       // get a list from the db and return it
+      console.log("OK???");
       findAllDocuments(db, function(docs) {
         //res.send([{test:"test"},{testTwo:"testTwo"},req.params.key, req.params.id]);
         res.send(docs);
