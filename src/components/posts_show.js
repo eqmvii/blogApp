@@ -10,14 +10,16 @@ class PostsShow extends Component {
   };
   // Never use context. Only for the router right here.
 
-
+// *** see comments for home-server wiring ***
   componentWillMount () {
     this.props.fetchPost(this.props.params.id);
+    //this.props.fetchPost(this.props.params._id);
     //console.log(this.props.params.id);
   }
 
   onDeleteClick () {
     this.props.deletePost(this.props.params.id)
+    //this.props.deletePost(this.props.params._id)
       .then(() => {
         this.context.router.push('/');
       });

@@ -25,7 +25,11 @@ export function fetchPosts() {
 //redux promise will grab this and axios sets up the HTTP AJAX
 
 export function createPost(props) {
-  const request = axios.post(`${ROOT_URL}/posts${API_KEY}`, props);
+  console.log("Creating poss!");
+  // const request = axios.post(`${ROOT_URL}/posts${API_KEY}`, props);
+  const request = axios.post(`${ROOT_URL}/posts/`, props);
+  console.log("Here is the request!");
+  console.log(request);
   return {
     type: CREATE_POST,
     payload: request

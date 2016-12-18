@@ -20,8 +20,11 @@ class PostsIndex extends Component {
     return this.props.posts.map((post) => {
       //console.log("Render got called");
       return (
-        <li className="list-group-item" key={post.id}>
-          <Link to={"posts/" + post.id}>
+        // *** comments below swap with custom server ***
+        // <li className="list-group-item" key={post.id}>
+          // <Link to={"posts/" + post.id}>
+        <li className="list-group-item" key={post._id}>
+          <Link to={"posts/" + post._id}>
 
           <h3>{post.title}</h3>
           </Link>

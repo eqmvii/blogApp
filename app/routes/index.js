@@ -9,6 +9,7 @@ console.log(test);
 module.exports = function (app, db) {
   var jsonParser = bodyParser.json();
   app.use(bodyParser.urlencoded({ extended: true }));
+
   app.route('/')
     .get(function(req,res) {
       res.sendFile(process.cwd() + '/index.html');
@@ -25,9 +26,13 @@ module.exports = function (app, db) {
 
     })
     .post(jsonParser, function(req,res) {
-      if (!req.body) return res.sendStatus(400)
+      if (!req.body) { return res.sendStatus(400) }
       // add a post to the db
-      var newPost = JSON.parse(req.body.blogpost);
+      console.log("---This is what I got boss---");
+      console.log(req.body);
+      console.log("Type:" + typeof req.body);
+      console.log("---end of req.body---")
+      var newPost = req.body;
       //res.json(req.body.id);
       console.log(newPost);
       insertDocuments(db, newPost, function() {
