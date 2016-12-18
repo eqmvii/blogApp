@@ -2,8 +2,8 @@
 var bodyParser = require('body-parser');
 var ObjectID = require('mongodb').ObjectID;
 
-var test = {hello: "world"};
-console.log(test);
+//var test = {hello: "world"};
+//console.log(test);
 
 // routes for API endpoints
 module.exports = function (app, db) {
@@ -12,7 +12,7 @@ module.exports = function (app, db) {
 
   app.route('/')
     .get(function(req,res) {
-      res.sendFile(process.cwd() + '/build/index.html');
+      res.sendFile(process.cwd() + '/index.html');
     });
 
   app.route('/api/posts/')
