@@ -16,7 +16,7 @@ MongoClient.connect(url, function(err, db) {
   assert.equal(null, err);
   console.log("Connected successfully to server at " + url);
 
-  app.use('/', express.static(process.cwd() ));
+  app.use('/', express.static(process.cwd() + '/'));
 app.use('/public', express.static(process.cwd() + '/public'));
   app.use('/controllers', express.static(process.cwd() + '/app/controllers'));
 
